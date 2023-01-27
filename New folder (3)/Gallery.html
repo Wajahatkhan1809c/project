@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="lightbox.min.css">
+<script src="lightbox-plus-jquery.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<style>
+#gallery{
+	background-color:#f0f1E9;
+	}
+.fit-image{
+	height:100%;
+	width:100%;
+	}
+.title{
+	font-size:24px;
+	margin-bottom:50px;
+	}
+#my-grid{
+	margin-top:50px;
+	}
+.grid-padding{
+	padding:0 8px;
+	}
+.grid-padding img{
+	margin-bottom:50px;
+	transition:0.8s ease;
+	}
+.grid-padding img:hover{
+	box-shadow:0 10px 40px 0 rgba(0,0,0,0.5);
+	transition:0.8s ease;
+	}
+.col-sm-4{
+	padding-right:30px;
+	}
+
+
+
+
+
+	
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	color:forestgreen;
+	margin:30px 0 50px;
+	}
+.gallery{
+	margin:10px 50px;
+	}
+.gallery img{
+	width:230px;
+	padding:5px;
+	filter: grayscale(100%);
+	transition:1s;
+	}
+.gallery img:hover{
+	filter: grayscale(0);
+	transform:scale(1.1);
+	}			
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+<section class="section-padding" id="gallery">
+<div class="container">
+
+<!--- Title Text ---->
+<div class="row">
+<div class="col-sm-12">
+<h2 class="title text-center">
+Let's <span class="decorate">See</span> My Gellery
+</h2>
+</div>
+</div>
+
+<!--- Image Grid or Thumbnails ---->
+<div class="container">
+<div id="my-grid" class="grid-padding">
+<div class="row">
+
+<!--- First Column --->
+<div class="col-sm-4">
+<div class="row"><img src="image/images (3).jpg" class="fit-image" onClick="openModal();currentSlide(1)"></div>
+<div class="row"><img src="image/images.jpg" class="fit-image" onClick="openModal();currentSlide(2)"></div>
+<div class="row"><img src="image/images (4).jpg" class="fit-image" onClick="openModal();currentSlide(3)"></div>
+<div class="row"><img src="image/images (1).jpg" class="fit-image" onClick="openModal();currentSlide(4)"></div>
+
+
+
+</div>
+<!---- Second Column ---->
+<div class="col-sm-4">
+
+<div class="row"><img src="image/images (4).jpg" class="fit-image" onClick="openModal();currentSlide(5)"></div>
+<div class="row"><img src="image/images (5).jpg" class="fit-image" onClick="openModal();currentSlide(6)"></div>
+<div class="row"><img src="image/images (3).jpg" class="fit-image" onClick="openModal();currentSlide(7)"></div>
+<div class="row"><img src="image/images (2).jpg" class="fit-image" onClick="openModal();currentSlide(8)"></div>
+<div class="row"><img src="image/images (1).jpg" class="fit-image" onClick="openModal();currentSlide(9)"></div>
+
+</div>
+
+<!---- Third Column --->
+<div class="col-sm-4">
+
+<div class="row"><img src="image/images (3).jpg" class="fit-image" onClick="openModal();currentSlide(10)"></div>
+<div class="row"><img src="image/images (1).jpg" class="fit-image" onClick="openModal();currentSlide(11)"></div>
+<div class="row"><img src="image/images (2).jpg" class="fit-image" onClick="openModal();currentSlide(12)"></div>
+<div class="row"><img src="image/images (5).jpg" class="fit-image" onClick="openModal();currentSlide(13)"></div>
+<div class="row"><img src="image/images.jpg" class="fit-image" onClick="openModal();currentSlide(14)"></div>
+<div class="row"><img src="image/images (4).jpg" class="fit-image" onClick="openModal();currentSlide(15)"></div>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<h1>our gallery</h1>
+<div class="gallery">
+<a href="image/download.jpg" data-lightbox="mygallery"><img src="image/download.jpg"></a>
+<a href="image/download (1).jpg" data-lightbox="mygallery"><img src="image/download (1).jpg"></a>
+<a href="image/download (2).jpg" data-lightbox="mygallery"><img src="image/download (2).jpg"></a>
+<a href="image/download (3).jpg" data-lightbox="mygallery"><img src="image/download (3).jpg"></a>
+<a href="image/download (4).jpg" data-lightbox="mygallery"><img src="image/download (4).jpg"></a>
+<a href="image/download (7).jpg" data-lightbox="mygallery"><img src="image/download (7).jpg"></a>
+<a href="image/download (8).jpg" data-lightbox="mygallery"><img src="image/download (8).jpg"></a>
+<a href="image/download (9).jpg" data-lightbox="mygallery"><img src="image/download (9).jpg"></a>
+<a href="image/download (10).jpg" data-lightbox="mygallery"><img src="image/download (10).jpg"></a>
+<a href="image/images (6).jpg" data-lightbox="mygallery"><img src="image/images (6).jpg"></a>
+<a href="image/images (7).jpg" data-lightbox="mygallery"><img src="image/images (7).jpg"></a>
+<a href="image/images (8).jpg" data-lightbox="mygallery"><img src="image/images (8).jpg"></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
